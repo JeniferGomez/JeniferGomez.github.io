@@ -1,0 +1,317 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 18px; 
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5)), url('./images/casino-981943946.jpg') no-repeat right;
+    background-size: cover;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+    font-family: 'Montserrat Alternates', sans-serif; /* Agregamos el tipo de letra */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .featured {
+    position: relative;
+    background-image: url('./images/Casino-portada-900x565.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffdb4d;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+  .btn-scale:hover {
+    transform: scale(1.1);
+  }
+
+  .two-column-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: url('./images/cuanto_mide_un_campo_de_futbol_34969_orig.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 2.4;
+  }
+  
+  .left-column {
+    flex: 1;
+    display: flex;
+    position: relative;
+    height: 275px; 
+  }
+  
+  .gradient-bg {
+    flex: 1;
+    background: url('./images/RONALDOOOO.gif') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100rem;
+    color: white;
+  }
+  
+  .right-column {
+    flex: 1;
+    padding: 0 2rem;
+    
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: url('./images/vecteezy_sport-ball-football-png_12996773_507\ \(1\).png'), auto;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+  }
+  
+  .custom-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .button-logo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .button-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .custom-button:hover .button-logo {
+    opacity: 1;
+  }
+  
+  .button-title {
+    font-size: 16px;
+  }
+
+  .dice-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding-left: 20px; /* Espacio izquierdo */
+  }
+  
+  .dice-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dice {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: roll 5s infinite;
+  }
+  
+  .face {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .front { transform: translateZ(50px); }
+  .back { transform: rotateY(180deg) translateZ(50px); }
+  .right { transform: rotateY(90deg) translateZ(50px); }
+  .left { transform: rotateY(-90deg) translateZ(50px); }
+  .top { transform: rotateX(90deg) translateZ(50px); }
+  .bottom { transform: rotateX(-90deg) translateZ(50px); }
+  
+  @keyframes roll {
+    0%, 100% { transform: rotateX(0) rotateY(0); }
+    10% { transform: rotateX(20deg) rotateY(45deg); }
+    20% { transform: rotateX(40deg) rotateY(90deg); }
+    30% { transform: rotateX(60deg) rotateY(135deg); }
+    40% { transform: rotateX(80deg) rotateY(180deg); }
+    50% { transform: rotateX(100deg) rotateY(225deg); }
+    60% { transform: rotateX(120deg) rotateY(270deg); }
+    70% { transform: rotateX(140deg) rotateY(315deg); }
+  }
+
+  .dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+  }
+  
+  .dot {
+    width: 23%;
+    height: 23%;
+    background-color: black;
+    border-radius: 50%;
+    margin: 5%;
+  }
+
+  .casino-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    background-image: url('./images/descarga.png'); 
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+  }
+  
+  .dice-container,
+  .roulette-container {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+  }
+
+  .title {
+    flex: 2; 
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+  }
+  
+  .content {
+    flex: 1; 
+    padding: 20px; 
+  }
+  
+  .roulette {
+    width: 120px;
+    height: 120px;
+    perspective: 1000px;
+    justify-content: flex-end;
+  }
+  
+  .wheel {
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c;
+    border: 10px solid #c0392b;
+    border-radius: 50%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+  }
+
+  .bet-button {
+    background-color: yellow;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: url('./images/pngwing.com\ \(1\).png'), auto; /* Combina ambos valores aquí */
+    transition: background-color 0.3s;
+  }
+  
+  
+  .bet-button:hover {
+    background-color: gold;
+  }
